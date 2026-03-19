@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NUSACYBERA – Komunitas Digital Indonesia</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="particles" id="particles"></div>
+<div class="scanline"></div>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-brand" onclick="showPage('home')">NC</div>
+  <div class="nav-links">
+    <div class="nav-link active" onclick="showPage('home')">🏠 Home</div>
+    <div class="nav-link" onclick="showPage('features')">⚡ Fitur</div>
+    <div class="nav-link" onclick="showPage('rules')">📜 Aturan</div>
+    <div class="nav-link" onclick="showPage('admin')">👑 Admin</div>
+    <div class="nav-link" onclick="showPage('about')">📋 Info</div>
+    <div class="nav-link" onclick="showPage('fiturku')">🛠️ Fiturku</div>
+  </div>
+  <div class="nav-status">
+    <div class="nav-dot" id="navDot"></div>
+    <div class="nav-status-text" id="navStatusText">--:--</div>
+  </div>
+</div>
+
+<!-- PAGE: HOME -->
+<div class="page active" id="page-home">
+  <div class="container">
+    <div class="hero">
+      <div class="shield-wrap">
+        <svg class="shield-svg" viewBox="0 0 80 90" fill="none">
+          <path d="M40 4 L76 18 L76 52 Q76 74 40 86 Q4 74 4 52 L4 18 Z" fill="#071428" stroke="#00f5ff" stroke-width="2.5"/>
+          <path d="M40 12 L68 24 L68 50 Q68 68 40 78 Q12 68 12 50 L12 24 Z" fill="none" stroke="rgba(0,245,255,0.25)" stroke-width="1"/>
+          <text x="40" y="58" font-family="Arial Black" font-size="26" font-weight="900" fill="#00f5ff" text-anchor="middle">NC</text>
+        </svg>
+      </div>
+      <div class="hero-title">NUSACYBERA</div>
+      <div class="hero-sub">◈ KOMUNITAS DIGITAL INDONESIA ◈</div>
+      <div class="hero-desc">Santai • Seru • Anti Toxic 🔥</div>
+      <div class="status-hero" id="heroStatus">
+        <div class="nav-dot" id="heroDot"></div>
+        <span id="heroStatusText">MEMUAT...</span>
+      </div>
+      <div class="values">
+        <div class="value-pill">⚖️ Integritas</div>
+        <div class="value-pill">🤝 Toleransi</div>
+        <div class="value-pill">💡 Inovasi</div>
+        <div class="value-pill">🔗 Kolaborasi</div>
+      </div>
+      <a class="btn-join" href="https://chat.whatsapp.com/BEdbcIhzX3B59hYnAxpNEW?mode=gi_t" target="_blank">🚀 GABUNG NUSACYBERA!</a>
+      <div class="btn-join-sub">TAP UNTUK JOIN WHATSAPP GROUP</div>
+    </div>
+    <div class="clock-card">
+      <div>
+        <div class="clock-label">◈ JAM WIB SEKARANG</div>
+        <div class="clock-time" id="clockTime">--:--:--</div>
+        <div class="clock-date" id="clockDate">---</div>
+      </div>
+    </div>
+    <div class="ornament"><div class="orn-line"></div><div class="orn-diamond"></div><div class="orn-line"></div></div>
+    <div class="card card-gold">
+      <div class="cc tl"></div><div class="cc tr"></div><div class="cc bl"></div><div class="cc br"></div>
+      <div class="sec-title">◈ TENTANG NUSACYBERA ◈</div>
+      <p style="font-family:'Rajdhani',sans-serif;font-size:14px;color:#c8dff0;line-height:1.8;">
+        NUSACYBERA adalah komunitas digital Indonesia yang berfokus pada kenyamanan member.
+        Tempat ngobrol bebas, share proyek & mendapat apresiasi dari admin! 🙌<br/><br/>
+        Meski cuma grup WA — tapi di baliknya ada <strong style="color:var(--cyan)">sistem digital seperti app</strong> yang terus berkembang! 🚀
+      </p>
+    </div>
+    <div class="footer"><div class="footer-brand">NUSACYBERA</div><div class="footer-sub">KOMUNITAS DIGITAL INDONESIA 🇮🇩</div></div>
+  </div>
+</div>
+
+<!-- PAGE: FITUR -->
+<div class="page" id="page-features">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:24px;">
+      <div style="font-family:'Orbitron',monospace;font-size:18px;font-weight:900;color:var(--cyan);letter-spacing:3px;margin-bottom:6px;">⚡ FITUR NUSACYBERA</div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:4px;">BUKAN GRUP WA BIASA</div>
+    </div>
+    <div class="feature-item"><div class="feature-icon">💬</div><div class="feature-info"><div class="feature-name">FORUM KOMUNITAS</div><div class="feature-desc">Ngobrol & diskusi bebas meski grup WA ditutup! Login berbasis role dengan password. Aktif 24 jam.</div></div><div class="f-badge b-file">📁 FILE</div></div>
+    <div class="feature-item"><div class="feature-icon">🚨</div><div class="feature-info"><div class="feature-name">SISTEM LAPORAN</div><div class="feature-desc">Lapor member bermasalah langsung ke admin via form web — tanpa perlu chat manual ke admin!</div></div><div class="f-badge b-live">✅ LIVE</div></div>
+    <div class="feature-item"><div class="feature-icon">📜</div><div class="feature-info"><div class="feature-name">KONSTITUSI DIGITAL</div><div class="feature-desc">Aturan NUSACYBERA tersusun rapi dalam format konstitusi digital yang bisa diakses kapanpun.</div></div><div class="f-badge b-live">✅ LIVE</div></div>
+    <div class="feature-item"><div class="feature-icon">🚪</div><div class="feature-info"><div class="feature-name">FITUR KELUAR GRUP</div><div class="feature-desc">Keluar dari NUSACYBERA secara sopan & transparan via form. Langsung terkirim ke admin.</div></div><div class="f-badge b-file">📁 FILE</div></div>
+    <div class="ornament"><div class="orn-line"></div><div class="orn-diamond"></div><div class="orn-line"></div></div>
+    <div class="sec-title">◈ SEGERA HADIR ◈</div>
+    <div class="feature-item"><div class="feature-icon">🌙</div><div class="feature-info"><div class="feature-name">FITUR SPESIAL LEBARAN</div><div class="feature-desc">Halaman spesial Idul Fitri dengan countdown lebaran & ucapan resmi dari Owner.</div></div><div class="f-badge b-soon">🔜 SOON</div></div>
+    <div class="feature-item"><div class="feature-icon">🌐</div><div class="feature-info"><div class="feature-name">WEBSITE RESMI</div><div class="feature-desc">Website NUSACYBERA dengan domain & hosting. Masih dalam tahap pencarian hosting.</div></div><div class="f-badge b-wip">🔧 WIP</div></div>
+    <div class="feature-item"><div class="feature-icon">🔮</div><div class="feature-info"><div class="feature-name">??? — COMING SOON</div><div class="feature-desc">Nama fitur ini masih dirahasiakan! Akan diumumkan pada tanggal 25 Maret 2026. 🤫</div></div><div class="f-badge b-soon">🔜 SOON</div></div>
+    <div class="footer"><div class="footer-brand">NUSACYBERA</div><div class="footer-sub">TERUS BERKEMBANG SETIAP HARI 🔥</div></div>
+  </div>
+</div>
+
+<!-- PAGE: ADMIN -->
+<div class="page" id="page-admin">
+  <div class="container">
+    <div class="admin-hero">
+      <div class="admin-hero-title">👑 TIM ADMIN NUSACYBERA</div>
+      <div class="admin-hero-sub">◈ ORANG-ORANG DI BALIK NUSACYBERA ◈</div>
+    </div>
+    <div class="admin-card owner-card">
+      <div class="admin-top"><div class="admin-av owner-av">R</div><div class="admin-meta"><div class="admin-role-badge" style="color:var(--gold);">👑 OWNER & PENDIRI</div><div class="admin-name">Risky</div></div></div>
+      <ul class="admin-tasks"><li>Pendiri & Owner NUSACYBERA</li><li>Mengembangkan semua fitur berbasis web</li><li>Coding pakai HP — tanpa laptop & database 💪</li><li>Mengambil semua keputusan utama</li><li>Mengeluarkan fitur & peringatan resmi</li></ul>
+    </div>
+    <div class="admin-card">
+      <div class="admin-top"><div class="admin-av mod-av">W</div><div class="admin-meta"><div class="admin-role-badge" style="color:var(--cyan);">🛡️ MODERATOR</div><div class="admin-name">Wildan</div></div></div>
+      <ul class="admin-tasks"><li>Mendampingi & membantu Owner</li><li>Menggantikan Owner saat berhalangan</li><li>Menjaga ketertiban grup & komunitas</li></ul>
+    </div>
+    <div class="admin-card">
+      <div class="admin-top"><div class="admin-av adm-av">L</div><div class="admin-meta"><div class="admin-role-badge" style="color:var(--cyan2);">🛡️ ADMIN</div><div class="admin-name">Louis</div></div></div>
+      <ul class="admin-tasks"><li>Menyambut member baru</li><li>Menjaga ketertiban grup</li><li>Membantu promosi NUSACYBERA</li></ul>
+    </div>
+    <div class="admin-card">
+      <div class="admin-top"><div class="admin-av adm-av">K</div><div class="admin-meta"><div class="admin-role-badge" style="color:var(--cyan2);">🛡️ ADMIN</div><div class="admin-name">King</div></div></div>
+      <ul class="admin-tasks"><li>Menyambut member baru</li><li>Menjaga ketertiban grup</li><li>Membantu promosi NUSACYBERA</li></ul>
+    </div>
+    <div class="ornament"><div class="orn-line"></div><div class="orn-diamond"></div><div class="orn-line"></div></div>
+    <a class="btn-join" href="https://chat.whatsapp.com/BEdbcIhzX3B59hYnAxpNEW?mode=gi_t" target="_blank">🛡️ GABUNG NUSACYBERA!</a>
+    <div class="footer"><div class="footer-brand">NUSACYBERA</div><div class="footer-sub">ADMIN & MODERATOR TEAM 🇮🇩</div></div>
+  </div>
+</div>
+
+<!-- PAGE: ATURAN -->
+<div class="page" id="page-rules">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:24px;">
+      <div style="font-family:'Orbitron',monospace;font-size:18px;font-weight:900;color:var(--gold);letter-spacing:3px;margin-bottom:6px;">📜 KONSTITUSI & ATURAN</div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--cyan2);letter-spacing:4px;">RESMI DIKELUARKAN OLEH NUSACYBERA</div>
+    </div>
+    <div class="card card-gold">
+      <div class="cc tl"></div><div class="cc tr"></div><div class="cc bl"></div><div class="cc br"></div>
+      <div class="sec-title">◈ PEMBUKAAN ◈</div>
+      <p style="font-family:'Rajdhani',sans-serif;font-size:14px;color:#c8dff0;line-height:1.8;">Dengan semangat kami hadirkan komunitas ini, dan kami juga akan menindaklanjuti member yang tidak toleransi. 🛡️</p>
+    </div>
+    <div class="ornament"><div class="orn-line"></div><div class="orn-diamond"></div><div class="orn-line"></div></div>
+    <div class="footer"><div class="footer-brand">NUSACYBERA</div><div class="footer-sub">RESMI DIKELUARKAN OLEH ADMIN & MODERATOR TEAM 🇮🇩</div></div>
+  </div>
+</div>
+
+<!-- PAGE: INFO -->
+<div class="page" id="page-about">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:24px;">
+      <div style="font-family:'Orbitron',monospace;font-size:18px;font-weight:900;color:var(--cyan);letter-spacing:3px;margin-bottom:6px;">📋 INFO NUSACYBERA</div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:4px;">TRANSPARANSI ADALAH SEGALANYA</div>
+    </div>
+    <div class="about-stat">
+      <div class="stat-box"><div class="stat-num">10</div><div class="stat-label">ANGGOTA</div></div>
+      <div class="stat-box"><div class="stat-num">4</div><div class="stat-label">ADMIN</div></div>
+      <div class="stat-box"><div class="stat-num">6+</div><div class="stat-label">FITUR</div></div>
+      <div class="stat-box"><div class="stat-num">∞</div><div class="stat-label">SEMANGAT</div></div>
+    </div>
+    <div class="footer"><div class="footer-brand">NUSACYBERA</div><div class="footer-sub">KOMUNITAS DIGITAL INDONESIA 🇮🇩</div></div>
+  </div>
+</div>
+
+<!-- PAGE: FITURKU -->
+<div class="page" id="page-fiturku">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:24px;">
+      <div style="font-family:'Orbitron',monospace;font-size:18px;font-weight:900;color:var(--cyan);letter-spacing:3px;margin-bottom:6px;">🛠️ FITUR NUSACYBERA</div>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:4px;">PENJELASAN LENGKAP SEMUA FITUR</div>
+    </div>
+    <div class="footer"><div class="footer-brand">NUSACYBERA</div><div class="footer-sub">FITUR TERUS BERKEMBANG 🔥</div></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
